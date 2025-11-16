@@ -8,4 +8,68 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="image\dish\img-1.png" />
+    <None Remove="image\dish\img-10.png" />
+    <None Remove="image\dish\img-11.png" />
+    <None Remove="image\dish\img-12.png" />
+    <None Remove="image\dish\img-13.png" />
+    <None Remove="image\dish\img-14.png" />
+    <None Remove="image\dish\img-15.png" />
+    <None Remove="image\dish\img-16.png" />
+    <None Remove="image\dish\img-17.png" />
+    <None Remove="image\dish\img-18.png" />
+    <None Remove="image\dish\img-19.png" />
+    <None Remove="image\dish\img-2.png" />
+    <None Remove="image\dish\img-20.png" />
+    <None Remove="image\dish\img-21.png" />
+    <None Remove="image\dish\img-22.png" />
+    <None Remove="image\dish\img-23.png" />
+    <None Remove="image\dish\img-24.png" />
+    <None Remove="image\dish\img-25.png" />
+    <None Remove="image\dish\img-26.png" />
+    <None Remove="image\dish\img-27.png" />
+    <None Remove="image\dish\img-3.png" />
+    <None Remove="image\dish\img-4.png" />
+    <None Remove="image\dish\img-5.png" />
+    <None Remove="image\dish\img-6.png" />
+    <None Remove="image\dish\img-7.png" />
+    <None Remove="image\dish\img-8.png" />
+    <None Remove="image\dish\img-9.png" />
+    <None Remove="image\icon%28white%29.png" />
+    <None Remove="image\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\dish\img-1.png" />
+    <Resource Include="image\dish\img-10.png" />
+    <Resource Include="image\dish\img-11.png" />
+    <Resource Include="image\dish\img-12.png" />
+    <Resource Include="image\dish\img-13.png" />
+    <Resource Include="image\dish\img-14.png" />
+    <Resource Include="image\dish\img-15.png" />
+    <Resource Include="image\dish\img-16.png" />
+    <Resource Include="image\dish\img-17.png" />
+    <Resource Include="image\dish\img-18.png" />
+    <Resource Include="image\dish\img-19.png" />
+    <Resource Include="image\dish\img-2.png" />
+    <Resource Include="image\dish\img-20.png" />
+    <Resource Include="image\dish\img-21.png" />
+    <Resource Include="image\dish\img-22.png" />
+    <Resource Include="image\dish\img-23.png" />
+    <Resource Include="image\dish\img-24.png" />
+    <Resource Include="image\dish\img-25.png" />
+    <Resource Include="image\dish\img-26.png" />
+    <Resource Include="image\dish\img-27.png" />
+    <Resource Include="image\dish\img-3.png" />
+    <Resource Include="image\dish\img-4.png" />
+    <Resource Include="image\dish\img-5.png" />
+    <Resource Include="image\dish\img-6.png" />
+    <Resource Include="image\dish\img-7.png" />
+    <Resource Include="image\dish\img-8.png" />
+    <Resource Include="image\dish\img-9.png" />
+    <Resource Include="image\icon(white).png" />
+    <Resource Include="image\icon.png" />
+  </ItemGroup>
+
 </Project>
