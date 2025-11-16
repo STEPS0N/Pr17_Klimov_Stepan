@@ -29,6 +29,49 @@ namespace Pizza_Klimov.Layouts
         public Main(MainWindow _mainWindow)
         {
             InitializeComponent();
+            mainWindow = _mainWindow;
+
+            Dish newDish = new Dish();
+            newDish.img = "img-1";
+            newDish.name = "Сливочная";
+            newDish.description = "Пицца - итальянское национальное блюдо в виде круглой открытой дрожжевой лепёшки";
+
+            Dish.Ingredients newIngredient = new Dish.Ingredients();
+            newIngredient.name = "соус «Кунжутный»";
+            newDish.ingredients.Add(newIngredient);
+
+            newIngredient = new Dish.Ingredients();
+            newIngredient.name = "сыр «Моцарелла»";
+            newDish.ingredients.Add(newIngredient);
+
+            newIngredient = new Dish.Ingredients();
+            newIngredient.name = "сыр «Моцарелла» мягкий";
+            newDish.ingredients.Add(newIngredient);
+
+            newIngredient = new Dish.Ingredients();
+            newIngredient.name = "помидоры";
+            newDish.ingredients.Add(newIngredient);
+
+            Dish.Sizes newSize = new Dish.Sizes();
+            newSize.size = 23;
+            newSize.price = 380;
+            newSize.wes = 530;
+            newDish.sizes.Add(newSize);
+
+            newSize = new Dish.Sizes();
+            newSize.size = 30;
+            newSize.price = 760;
+            newSize.wes = 560;
+            newDish.sizes.Add(newSize);
+
+            newSize = new Dish.Sizes();
+            newSize.size = 40;
+            newSize.price = 1210;
+            newSize.wes = 730;
+            newDish.sizes.Add(newSize);
+
+            dishs.Add(newDish);
+            CreatePizza();
         }
 
         public void CreatePizza()
@@ -131,10 +174,10 @@ namespace Pizza_Klimov.Layouts
                     button1.Background = Brushes.White;
                     button1.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
 
-                    button2.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
-                    button2.Background = Brushes.White;
-                    button3.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
-                    button3.Background = Brushes.White;
+                    button2.Foreground = (Brush)bc.ConvertFrom("#FFFFFFFF");
+                    button2.Background = Brushes.Red;
+                    button3.Foreground = (Brush)bc.ConvertFrom("#FFFFFFFF");
+                    button3.Background = Brushes.Red;
 
                     dishs[int.Parse(button1.Tag.ToString())].activeSize = 0;
                     count.Text = dishs[int.Parse(button1.Tag.ToString())].sizes[0].countOrder.ToString();
@@ -155,10 +198,10 @@ namespace Pizza_Klimov.Layouts
                     button2.Background = Brushes.White;
                     button2.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
 
-                    button1.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
-                    button1.Background = Brushes.White;
-                    button3.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
-                    button3.Background = Brushes.White;
+                    button1.Foreground = (Brush)bc.ConvertFrom("#FFFFFFFF");
+                    button1.Background = Brushes.Red;
+                    button3.Foreground = (Brush)bc.ConvertFrom("#FFFFFFFF");
+                    button3.Background = Brushes.Red;
 
                     dishs[int.Parse(button1.Tag.ToString())].activeSize = 1;
                     count.Text = dishs[int.Parse(button1.Tag.ToString())].sizes[1].countOrder.ToString();
@@ -179,10 +222,10 @@ namespace Pizza_Klimov.Layouts
                     button3.Background = Brushes.White;
                     button3.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
 
-                    button1.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
-                    button1.Background = Brushes.White;
-                    button2.Foreground = (Brush)bc.ConvertFrom("#FFDD3333");
-                    button2.Background = Brushes.White;
+                    button1.Foreground = (Brush)bc.ConvertFrom("#FFFFFFFF");
+                    button1.Background = Brushes.Red;
+                    button2.Foreground = (Brush)bc.ConvertFrom("#FFFFFFFF");
+                    button2.Background = Brushes.Red;
 
                     dishs[int.Parse(button1.Tag.ToString())].activeSize = 2;
                     count.Text = dishs[int.Parse(button1.Tag.ToString())].sizes[2].countOrder.ToString();
@@ -225,7 +268,7 @@ namespace Pizza_Klimov.Layouts
                 plus.Content = "+";
                 plus.HorizontalAlignment = HorizontalAlignment.Right;
                 plus.VerticalAlignment = VerticalAlignment.Bottom;
-                plus.Margin = new Thickness(0, 0, 103f, 10);
+                plus.Margin = new Thickness(0, 0, 9f, 10);
                 plus.Width = 19;
                 plus.Tag = i;
                 plus.Click += delegate
