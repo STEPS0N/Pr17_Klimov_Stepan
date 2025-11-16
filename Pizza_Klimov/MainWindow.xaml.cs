@@ -34,7 +34,7 @@ namespace Pizza_Klimov
         public void OpenPages(pages _pages)
         {
             if (_pages == pages.main)
-                frame.Navigate(new Layouts.Main());
+                frame.Navigate(new Layouts.Main(this));
         }
     }
 }
